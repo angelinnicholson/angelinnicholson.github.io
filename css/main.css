@@ -58,8 +58,8 @@ body {
   min-height: 100vh;
 }
 .content-container {
-  display: flex;
   flex: 1 1 auto;
+  display: flex;
   padding-top: 10vh;
   width: 100%; /*CYOA*/
 }
@@ -173,24 +173,24 @@ h2 ~ p {
 }
 
 /* COLUMN STYLES */
-.col-three {
+ .col-three {
   display: flex;
   flex: 1 1 0;
 }
-.col {
+ .col {
   box-sizing: border-box;
   padding: 2em;
 }
-.col-three .col ~ .col {
+ .col-three .col ~ .col {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
-.col-three .col-nav {
+ .col-three .col-nav {
 /* Shrink but not grow, with min width of 15em */
-  flex: 0 1 15em;
+   flex: 0 1 15em;
 }
 .col-three .col-content {
 /* Content will both shrink and grow with as little space as possible */
-  flex: 1 1 0;
+   flex: 1 1 0;
 }
 .col-three .col-aside {
   flex: 0 1 20em;
